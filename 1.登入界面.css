@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* 设置body高度为100%窗口高度 */
+
+    /*  % 是相对于父元素的大小设定的比率，vw、vh 是视窗大小决定的。 
+    vw、vh 优势在于能够直接获取高度，而用 % 在没有设置 body高度的情况下，是无法正确获得可视区域的高度的，所以这是挺不错的优势。 */
+    height: 100vh;
+
+    /* 弹性盒子模型 */
+    display: flex;
+
+    /* 让body里的子类居中 */
+    justify-content: center;/*水平居中*/
+    align-items: center;/*垂直居中*/
+
+    background-color: #1d1928;
+
+}
+
+.container{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/*垂直排列*/
+
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #4471a3;
+    box-shadow: 15px 15px 10px rgba(54, 49, 83, 0.3);
+
+    
+    overflow: hidden;
+    position:relative;/*相对定位*/
+}
+
+.container form{
+    width: 350px;
+    height: 200px;
+
+    display: flex;
+    justify-content: space-around;/*水平平均分布*/
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.container form .tbx{
+    width: 250px;
+    height: 40px;
+    outline:none;/*外框框线*/
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.container form .tbx::placeholder{
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.container form .sub{
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    letter-spacing: 5px;/*字间距*/
+    color: #fff;
+    background: none;
+    cursor: pointer;/*光标类型*/
+    margin-top: 20px;
+}
+.container form .sub:hover{
+    background: #ac2d44;
+}
+
+.container h1{
+    color: #ecf0f1;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    text-shadow: 5px 5px 5px rgba(33, 45, 58, 0.3);
+    z-index: 1;
+}
+
+/* 设置鼠标进入样式 */
+.container .in{
+    position: absolute;/*绝对定位*/
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #cf455f;
+    transform: translate(-50%,-50%);  
+    /* 使用in动画，持续0.5秒，缓出的时间函数，停留在最后一帧 */
+    animation: in 0.5s ease-out forwards;
+}
+
+/* 设置鼠标离开样式 */
+.container .out{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background: #cf455f;
+    transform: translate(-50%,-50%);
+    /* 使用out动画，持续0.5秒，缓出的时间函数，停留在最后一帧 */
+    animation: out 0.5s ease-out forwards;
+}
+
+/* 动画 */
+/* 鼠标进入时动画 */
+@keyframes in {
+    0%{
+        width: 0;
+        height: 0;
+    }
+    100%{
+        width: 1200px;
+        height: 1200px;
+    }
+}
+
+/* 鼠标离开动画 */
+@keyframes out {
+    0%{
+        width: 1200px;
+        height: 1200px;
+    }
+    100%{
+        width: 0;
+        height: 0;
+    }
+}
