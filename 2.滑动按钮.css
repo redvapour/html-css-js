@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*设置段落最小高度*/
+    min-height: 100vh;
+    background: #27282c;
+    
+    flex-direction: column;
+
+    /* 设置网格行与列之间的间隙 */
+    gap: 50px;/*ie不支持*/
+}
+
+a{
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+    
+}
+
+a:hover{
+    /* 鼠标经过背景、字体颜色、阴影、间距都变化 */
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+a::before{
+    /* 创建伪元素盖在a标签上 */
+    content: '';
+    position: absolute;
+    /* left:2px;right: 2px;top:2px;bottom: 2px; 与下面等价*/
+    inset: 2px;/*ie不支持 */
+    background: #27282c;
+   
+    
+}
+
+a span{
+    position: relative;
+    /* 文字提上来 */
+    z-index: 1;
+}
+
+a i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+a i::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    /* x轴移动自身长度50%，使得变化前后中心比例相同   skew倾斜角度 */
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+
+}
+
+a:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+
+a i::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+
+}
+
+a:hover i::after{
+    width: 20px;
+    left: 80%;
+}
