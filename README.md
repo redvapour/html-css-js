@@ -17,3 +17,11 @@
 * 伪元素创建 覆盖在父盒子上
 * inset属性
 * transform & transition
+
+### 3.早安动画
+
+> 动画切换，css画万物，原作者：https://space.bilibili.com/91587702
+
+* css画船，梯形，直角三角形
+* css画鸟，渐变倒角
+* css画云，胶囊，圆形
