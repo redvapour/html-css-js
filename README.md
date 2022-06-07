@@ -31,3 +31,13 @@
 > 加载动画，走马灯效果，原作者：https://space.bilibili.com/1919335000
 
 * 结构伪类选择器，添加动画延迟
+
+### 5.网易轮播
+
+> 轮播图，模糊背景，原作者：https://space.bilibili.com/13604667
+
+* fontawsome，字体图标库
+* filter，模糊滤镜
+* object-fit，图片裁切
+* 响应式布局
+* 没懂：循环绑定点击事件，relatedTarget，compareDocumentPosition
