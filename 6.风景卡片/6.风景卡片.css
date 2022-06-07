@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  /*怪异盒子：盒子大小包含padding和border*/
+    box-sizing: border-box;
+}
+/*vh，屏幕高的百分比
+  vw，屏幕宽的百分比
+  vmin,vmax， 部分浏览器不支持，ie9 vm=wmin*/
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  /*未选中图片占比为0.5*/
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: all 700ms ease-in;
+}
+
+.panel h3 {
+   font-size: 24px;
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+   margin: 0;
+   opacity: 0; 
+}
+/*选中图片占比为5*/
+.panel.active {
+    flex: 5;
+  }
+/*选中图片才显示文字*/
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* 响应式布局，文档宽度小于480，占满，且隐藏第45张图片，即使被选中也会隐藏 */
+@media all and (max-width: 480px)  {
+    .container {
+      width: 100vw;
+    }
+  
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+      display: none;
+    }
+  }
+
+  

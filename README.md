@@ -41,3 +41,10 @@
 * object-fit，图片裁切
 * 响应式布局
 * 没懂：循环绑定点击事件，relatedTarget，compareDocumentPosition
+
+### 6.风景卡片
+
+> 点击切换,类名操作,原作者:https://github.com/bradtraversy/50projects50days
+
+* forEach遍历
+* .clssList操作类名
