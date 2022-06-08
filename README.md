@@ -48,3 +48,10 @@
 
 * forEach遍历
 * .clssList操作类名
+
+### 7.进度步骤
+
+> 点击切换,类名操作,原作者:https://github.com/bradtraversy/50projects50days
+
+* css变量设置, :roo{}
+* js中 .disabled控制表单元素是否可以使用
