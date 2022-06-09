@@ -55,3 +55,11 @@
 
 * css变量设置, :roo{}
 * js中 .disabled控制表单元素是否可以使用
+
+### 8.充电动画
+
+> 定时器，转圈，原作者：https://www.codingnepalweb.com/
+
+* css层叠，z-index，有点没懂
+* 圆形旋转，再内覆盖，形成转圈线动画
+* js的setInerval定时器事件
