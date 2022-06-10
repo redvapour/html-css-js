@@ -63,3 +63,11 @@
 * css层叠，z-index，有点没懂
 * 圆形旋转，再内覆盖，形成转圈线动画
 * js的setInerval定时器事件
+
+### 9.搜索隐藏
+
+> 点击显示或隐藏搜索框，原作者：https://github.com/bradtraversy/50projects50days
+
+* 出去吃吃喝喝的一天
+* *element*.classList.toggle('xxx')切换类名
+* link引入，integrity属性和crossorigin

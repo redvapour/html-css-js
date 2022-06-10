@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.搜索隐藏</title>
+    
+    <!-- integrity属性:提供一个hash，用来进行验签，检验加载的JavaScript文件或者CSS问卷是否完整。 -->
+    <!-- crossorigin的属性值可以是anonymous、use-credentials，如果没有属性值或者非法属性值，会被浏览器默认做anonymous。
+        1.crossorigin会让浏览器启用CORS访问检查，检查http响应头的Access-Control-Allow-Origin
+        2.对于传统script需要跨域获取的JS资源，控制暴露出其报错的详细信息
+        3.对于module script，控制用于跨域请求的凭据模式 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./9.搜索隐藏.css">
+</head>
+<body>
+    <div class="search">
+        <input type="text" class="input" placeholder="Search....">
+        <button class="btn">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <script src="./9.搜索隐藏.js"></script>
+</body>
+</html>
