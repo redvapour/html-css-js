@@ -71,3 +71,10 @@
 * 出去吃吃喝喝的一天
 * *element*.classList.toggle('xxx')切换类名
 * link引入，integrity属性和crossorigin
+
+### 10.模糊加载
+
+> 百分文字越来越淡，背景模糊越来越小，原作者：https://github.com/bradtraversy/50projects50days
+
+* setInterval。定时调用函数
+* 一个很长的表达式，自增值与透明度和模糊值联动
