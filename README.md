@@ -78,3 +78,12 @@
 
 * setInterval。定时调用函数
 * 一个很长的表达式，自增值与透明度和模糊值联动
+
+### 11.宕机页面
+
+> 404小鬼漂浮的响应式页面，原作者：https://youtu.be/WG2l4ER3_Qc
+
+* 响应式页面
+* 点击图标关闭菜单
+* a标签不跳转，onclick="return false;"
+* 滚动动画库：scrollReveal
