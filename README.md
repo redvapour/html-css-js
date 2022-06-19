@@ -87,3 +87,11 @@
 * 点击图标关闭菜单
 * a标签不跳转，onclick="return false;"
 * 滚动动画库：scrollReveal
+
+### 12.滚动加载
+
+> 盒子从左右飞进来,原作者:https://github.com/bradtraversy/50projects50days
+
+* :nth-of-type()选择器
+* window.innerHeight，获取屏幕高
+* .getBoundingClientRect()，获取元素边距即宽高
