@@ -95,3 +95,11 @@
 * :nth-of-type()选择器
 * window.innerHeight，获取屏幕高
 * .getBoundingClientRect()，获取元素边距即宽高
+
+### 13.分屏展示
+
+> 左右根据鼠标位置变换大小，原作者:https://github.com/bradtraversy/50projects50days
+
+* 两个变量，width，25%和75%
+* 鼠标在和不在，追加类名
+* mouseenter   mouseleave
