@@ -103,3 +103,11 @@
 * 两个变量，width，25%和75%
 * 鼠标在和不在，追加类名
 * mouseenter   mouseleave
+
+### 14.音乐播放
+
+> 耳机产品展示，音乐播放，原作者：https://space.bilibili.com/13833854
+
+* source，单标签链接文件
+* element.paused，音频是否暂停，返回布尔值
+* audio.play()，audio.pause(),播放和暂停方法
