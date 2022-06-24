@@ -111,3 +111,12 @@
 * source，单标签链接文件
 * element.paused，音频是否暂停，返回布尔值
 * audio.play()，audio.pause(),播放和暂停方法
+
+### 15.滚动时钟
+
+> 时钟带有振动效果，原作者:https://codepen.io/jkantner/pens/public
+
+* class类
+* DOMContentLoaded事件监听
+* ES6, 箭头函数，结构赋值，forEach遍历...各种this
+* a = setTimeout(function.bind(this),1000);     bind里this指向？
