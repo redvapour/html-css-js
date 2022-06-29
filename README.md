@@ -120,3 +120,13 @@
 * DOMContentLoaded事件监听
 * ES6, 箭头函数，结构赋值，forEach遍历...各种this
 * a = setTimeout(function.bind(this),1000);     bind里this指向？
+
+### 16.立体轮盘
+
+> 根据数组生成轮盘，原作者：https://codepen.io/MarkBoots
+
+* css定义变量，根据js数据展示对应效果
+* 模板语法， `${ ... } ` 
+
+* Element.append()，添加节点
+* window.getComputedStyle()，返回一个计算属性对象
