@@ -130,3 +130,10 @@
 
 * Element.append()，添加节点
 * window.getComputedStyle()，返回一个计算属性对象
+
+### 17.一个句子
+
+> 从网络随机获取一个句子
+
+* axios发送请求
+* 事假委派
