@@ -137,3 +137,11 @@
 
 * axios发送请求
 * 事假委派
+
+### 18.滑动黑板
+
+> 方块矩阵，滑动随机颜色，原作者：https://github.com/bradtraversy/50projects50days
+
+* createElement 创建元素
+* appendChild 插入元素
+* transition-duration 设置过度时间
