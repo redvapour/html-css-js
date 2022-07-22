@@ -145,3 +145,10 @@
 * createElement 创建元素
 * appendChild 插入元素
 * transition-duration 设置过度时间
+
+### 19.聚光特效
+
+> 聚光灯滑动效果，原作者：https://gitee.com/wyanhui02
+
+* background-clip，以文字的范围来裁剪背景图片，一个Chrome都不兼容的属性
+* clip-path，将元素裁剪为一个圆形

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 111px;
+  position: relative;
+}
+h1::after {
+  content: "helloworld";
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #ff69b3,
+    #fe0000,
+    #ffa401,
+    #ffff01,
+    #008102,
+    #40e1d2,
+    #410098,
+    #9400d4
+  );
+  /* 以文字的范围来裁剪背景图片 */
+  background-clip: text; /*这个不兼容chrome*/
+  -webkit-background-clip: text;
+  /* 将元素裁剪为一个圆形（100px表示圆的直径，0% 50%表示圆心的位置） */
+  clip-path: circle(100px at 0% 50%);
+  animation: light 5s infinite;
+}
+@keyframes light {
+  0% {
+    clip-path: circle(100px at 0% 50%);
+  }
+  50% {
+    clip-path: circle(100px at 100% 50%);
+  }
+  100% {
+    clip-path: circle(100px at 0% 50%);
+  }
+}
