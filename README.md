@@ -152,3 +152,12 @@
 
 * background-clip，以文字的范围来裁剪背景图片，一个Chrome都不兼容的属性
 * clip-path，将元素裁剪为一个圆形
+
+### 20.确认删除
+
+> 根据点击位置完成四个方向旋转出现，原作者https://github.com/local-host-8080/demo-html-css
+
+* user-select: none 文本不能被选中
+* perspective 指定了观察者与z=0平面的距离
+
+* js 计算点击位于标签哪个区域
